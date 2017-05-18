@@ -1,0 +1,30 @@
+{
+  "name": "oglasi",
+  "version": "1.0.0",
+  "description": "Ovo je projekat Anastasije i Adama",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamPokrajac/Oglasi.git"
+  },
+  "keywords": [
+    "mef",
+    "oglasi",
+    "programiranje"
+  ],
+  "author": "Anastasija i Adam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamPokrajac/Oglasi/issues"
+  },
+  "homepage": "https://github.com/adamPokrajac/Oglasi#readme"
+}

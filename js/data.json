@@ -1,0 +1,22 @@
+{
+    "description": "This is JSON file which is used for data storage.",
+    "data": [{
+        "adID": 3,
+        "title": ".NET Developer",
+        "text": "Potreban je .NET programer sa iskustvom od najmanje 3 godine.",
+        "company": "Sedna",
+        "date": "17-06-2017 14:42"
+    }, {
+        "adID": 4,
+        "title": "Node.js developer",
+        "text": "Quantox trazi Node.js developera.",
+        "company": "Quantox",
+        "date": "18-5-2017 14:11"
+    }, {
+        "adID": 5,
+        "title": "PHP Senior Programer",
+        "text": "Potreban je programer sa iskustvom od 4 godine.",
+        "company": "Vast",
+        "date": "18-5-2017 14:23"
+    }]
+}

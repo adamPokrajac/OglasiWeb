@@ -1,0 +1,60 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <title>IT Oglasi</title>
+    <script src="https://use.fontawesome.com/8552139a76.js"></script>
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <h1> IT Oglasi   <a href="#" title="Dodaj oglas" class="twitter" onclick="OpenSaveModal(0)"><i class="fa fa-plus" aria-hidden="true"></i></a> </h1>
+    <div class="row">
+        <div class="bg-agile" id="AdsContainer">
+        </div>
+    </div>
+    <div class="copy w3ls">
+        <p>&copy; 2017 Anastasija i Adam.</p>
+    </div>
+    <div id="alert" style="display:none">
+        <span class="close" onclick="$('#alert').hide();">x</span>
+        <p></p>
+    </div>
+    <div class="myModal modal fade" id="saveModal" style="display:none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content-modal">
+                <div class="modal-header">
+                    <button type="button" class="close closeModal"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="saveModal-label">Dodavanje oglasa</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <input type="hidden" id="adID" />
+                        <div class="form-group">
+                            <label class="control-label" for="title">Naslov oglasa</label>
+                            <input id="title" placeholder="Naslov oglasa..." class="form-control" required />
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="text">Tekst oglasa</label>
+                            <textarea id="text" placeholder="Upisite tekst oglasa..." class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="company">Firma</label>
+                            <input id="company" placeholder="Upisite naziv firme..." class="form-control" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary pull-right" onclick="SaveAd()">Sacuvaj</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            RefreshAds();
+        })
+    </script>
+</body>
+</html>
