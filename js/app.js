@@ -51,7 +51,7 @@ function OpenSaveModal(id) {
             $('#saveModal').show();
         }, function (err) {
             Aalert(err, true);
-        }, )
+        })
 
 
     }
