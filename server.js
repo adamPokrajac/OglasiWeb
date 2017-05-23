@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 
-app.listen(8000, function () {
+app.listen(process.env.PORT || 8000, function () {
     console.log('Aplikacija je hostovana na adresi: localhost:8000')
 })
 
